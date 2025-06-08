@@ -1,0 +1,360 @@
+.main-container {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.upper-page-portion {
+  height: auto;
+  overflow-y: auto;
+}
+
+.lower-page-portion {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  height: 15%;
+  background-color: #161616;
+  border-top: 1px solid #e30085;
+}
+
+.first-portion-bottom {
+  display: flex;
+  width: 25%;
+}
+
+.second-portion-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.bottom-controls {
+  display: flex;
+  color: #fff;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #fff;
+}
+
+.play-btn {
+  padding: 0 0.8rem 0 0.8rem;
+  cursor: pointer;
+}
+
+.third-portion-bottom {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.add-playlist-button {
+  color: #888;
+  padding-top: 1.7rem;
+}
+
+.add-playlist-button:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.lower-portion-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-bottom: 0.3rem;
+  color: #fff;
+}
+
+.lower-portion-img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+
+.song-name-bottom {
+  font-size: 0.9rem;
+}
+
+.artist-name-bottom {
+  font-size: 0.8rem;
+  color: #676767;
+}
+
+.nav-card-container {
+  display: flex;
+}
+
+.cards-side {
+  border-radius: 5px;
+  margin: 0.7rem 0 1rem 0;
+  padding: 1rem;
+  background-color: #242323;
+}
+
+.nav-side {
+  width: 10rem;
+  border-radius: 5px;
+  margin: 0.7rem 0.7rem 1rem 2rem;
+  padding: 1rem;
+  background-color: #242323;
+}
+
+.search-playlist {
+  margin: 1rem 1rem 0 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #242323;
+  width: 92%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lotte-anime {
+  width: 15rem;
+  height: 15rem;
+  margin-left: 3rem;
+}
+
+.playlist-container,
+.liked-songs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.liked-songs-container {
+  margin-top: 0.7rem;
+}
+
+.liked-songs {
+  width: 45rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem;
+  justify-content: center;
+}
+
+.instructions-heading {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 4rem;
+  margin-right: 1.5rem;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+.instruction-text {
+  color: #fff;
+  font-size: small;
+  line-height: 1.5rem;
+  margin: 0 1.5rem 0 1rem;
+}
+
+.liked-song-icon-bottom {
+  z-index: 10;
+  color: #676767;
+  padding: 1.5rem 0rem 0 5%;
+}
+
+.liked-container:hover {
+  color: #fff;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@media (min-device-width: 1280px) and (min-device-height: 800px) {
+  .instructions-heading {
+    margin-right: 1rem;
+  }
+  .instruction-text {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 1279px) {
+  .instructions {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-card-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .search-playlist {
+    width: 85%;
+    background: none;
+  }
+
+  .nav-side {
+    background: none;
+    width: 10rem;
+    margin-bottom: 0;
+  }
+
+  .cards-side {
+    margin-top: 0;
+
+    background: none;
+  }
+}
+
+@media (max-width: 818px) {
+  .lotte-anime {
+    display: none;
+  }
+
+  .liked-songs-container {
+    margin-top: 0;
+  }
+
+  .liked-songs {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-side {
+    width: 27rem;
+  }
+
+  .songs-card-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* @media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .liked-songs {
+    width: 45rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    justify-content: center;
+  }
+  .lotte-anime {
+    display: block;
+    margin-right: 5rem;
+    width: 15rem;
+  }
+} */
+
+@media (max-width: 756px) {
+  .lower-portion-details {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 657px) {
+  .search-playlist {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .search-playlist {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .cards-side {
+    width: 20rem;
+    margin-bottom: 5rem;
+  }
+
+  .nav-card-container {
+    height: 100vh;
+  }
+
+  .nav-side {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+
+  .lower-page-portion {
+    height: 8%;
+    bottom: 6%;
+  }
+
+  .liked-songs-container {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 431px) {
+  .liked-song-icon-bottom {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 415px) {
+  .nav-side {
+    display: none;
+  }
+
+  .main-container,
+  .nav-card-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .cards-side {
+    width: 20rem;
+    margin-bottom: 5rem;
+  }
+
+  .search-playlist {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 376px) {
+  .cards-side {
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 361px) {
+  .cards-side {
+    margin-bottom: 5rem;
+  }
+}

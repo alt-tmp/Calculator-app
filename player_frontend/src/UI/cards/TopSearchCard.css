@@ -1,0 +1,77 @@
+.logout-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-btn {
+  width: 4rem;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  color: #e30085;
+}
+
+.add-playlist-mobile {
+  display: none;
+}
+
+.add-song-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .search-items {
+    display: none;
+  }
+  .circular-profile-image {
+    margin-left: 1.5rem;
+  }
+
+  .logout-btn {
+    font-weight: normal;
+  }
+
+  .add-playlist-mobile {
+    display: block;
+    color: #fff;
+    padding: 0.5rem 0 0 1rem;
+    margin-left: 1rem;
+  }
+
+  .add-song-mobile {
+    display: block;
+    color: #fff;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .logout-btn-container {
+    padding-top: 0.5rem;
+  }
+
+  .search-items {
+    display: none;
+  }
+
+  .add-playlist-mobile {
+    display: block;
+    color: #fff;
+    padding: 0.5rem 0 0 1rem;
+  }
+
+  .add-song-mobile {
+    display: block;
+    color: #fff;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .circular-profile-image {
+    margin-left: 2rem;
+  }
+}
